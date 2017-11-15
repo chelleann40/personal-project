@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    }
+
+body{
+    /*width: 70vw;*/
+    width: 950px;
+    margin: 5px auto 40px auto;
+    margin-top: 110px;
+    background-image: url(../images/background-image-2.jpeg);
+}
+
+bg{
+    /*width: 70vw;*/
+    width: 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70vw;
+}
+
+nav { 
+    position: fixed;
+    top: 0; /*Positions this at top of page*/
+    width: 950px;
+    height: 45px;
+    display:flex;
+    text-align: center;
+   /* vertical-align: center;*/
+    justify-content: flex-end;
+    margin: 2px 0 0; /*REVIEW THIS*/
+    font-size: 25px;
+    background-color: #404040;
+} 
+
+nav li {
+   display:inline-block; 
+   padding: 5px 5px;
+}
+
+nav a {
+  font-weight: normal;
+  padding: 10px 5px;
+  font-size: .80em;
+  text-decoration: none;
+  color: #EE7500;
+}
+
+
+header{
+    position: fixed;
+    top: 40px;
+    height: 70px; 
+    /*width: 70vw;*/
+    width: 950px;
+    flex-direction: row;
+    text-align: center;
+    background-color: #404040; 
+    font-size: 150%;
+    color: #ffffff;
+    font-family: Arvo;
+    letter-spacing: 8px;
+}
+
+#image-menu{
+   /* top: 100px;*/
+    height: 850px;
+    vertical-align: middle;
+    background-color: #f5f5f0;
+}
+
+figcaption{
+    text-align: center;
+    text-decoration: none;
+}
+
+figcaption a{
+    color: green;
+    font-size: medium;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+
+#home{
+    height: 100vh; /*Trying to make it fit height of screen*/
+    /*width: 70vw;*/
+    height: auto;
+    width: 950px;
+    align-items: center;
+}
+
+.food-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.food-images img{
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+#recipe-section{
+    background-color: #f5f5f0;
+}
+
+
+#recipe-section img{
+    margin-left: auto;
+    margin-right: auto;
+    color: #404040;
+}
+
+#recipe-section a{
+    color: #001a00;
+    font-size: medium;
+}
+
+.recipe-layout{
+    /*padding-bottom: 50px;*/
+    width: 950px;
+    text-align: center;
+}
+
+.recipe-layout h3{
+    font-family: Arvo;
+    font-size: 40pt;
+    color: #393D40;
+    font-style: italic;
+    text-align: center;
+}
+
+/*Add font family to this*/
+.recipe-layout h4{
+    color: #393D40;
+    font-size: 14pt;
+}
+
+/*Add font family to this*/
+.recipe-layout p{
+    font-size: 10pt;
+    color: #393D40;
+}
+
+/*
+.recipe-layout img{
+   display: block;
+    margin: auto;
+}
+*/
+
+/*
+.recipe-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+*/
+
+.recipe-head {
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer{
+    bottom: 0;
+    position: fixed; /*Do I NEED TO ADD MORE TO THIS?*/
+    height: 25px;
+    width: 950px;
+    text-align: center;
+    background-color: #404040;
+    color: #EE7500;
+    font-size: large;
+}
+
+/*
+footer p{
+    color: #000000;
+    font-size: large;
+}
+*/
+footer a{
+    text-decoration: none;
+}
+
+.container a:visited {
+    color: purple;
+} 
+
+.container ul{
+    list-style-type: none; 
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+} 
+
+
+
