@@ -7,10 +7,9 @@ body{
     /*width: 70vw;*/
     width: 950px;
     margin: 5px auto 40px auto;
-    margin-top: 20px;
+    margin-top: 110px;
     background-image: url(../images/background-image-2.jpeg);
 }
-
 
 bg{
     /*width: 70vw;*/
@@ -20,21 +19,9 @@ bg{
     background-size: 70vw;
 }
 
-#main-nav { 
-    /*position: fixed;*/
-    /*top: 0; Positions this at top of page*/
-    width: 950px;
-    height: 50px;
-    display:flex;
-    text-align: center;
-    justify-content: flex-end;
-    font-size: 25px;
-    background-color: #404040;
-} 
-
-#recipe-nav { 
-    /*position: fixed;*/
-    /*top: 0; Positions this at top of page*/
+nav { 
+    position: fixed;
+    top: 0; /*Positions this at top of page*/
     width: 950px;
     height: 50px;
     display:flex;
@@ -58,10 +45,10 @@ nav a {
 }
 
 
-#main-head{
-    /*position: fixed;*/
-    top: 20px;
-    height: 70px;
+header{
+    position: fixed;
+    top: 40px;
+    height: 70px; 
     width: 950px;
     flex-direction: row;
     text-align: center;
@@ -71,25 +58,6 @@ nav a {
     font-family: Arvo;
     letter-spacing: 8px;
 }
-
-#recipe-header{
-    /*position: fixed;*/
-    top: 20px;
-    height: 70px;
-    width: 950px;
-    flex-direction: row;
-    text-align: center;
-    background-color: #404040; 
-    font-size: 150%;
-    color: #ffffff;
-    font-family: Arvo;
-    letter-spacing: 8px;
-}
-
-h1 {
-    text-align: center;
-} 
-
 
 #image-menu{
     /*height: 850px;*/
@@ -100,18 +68,28 @@ h1 {
 }
 
 #recipe-links{
-      top: 150px;
       display: inline-block;
       height: 50px;
       width: 950px;
       text-align: center;
       justify-content: space-between;
-      background-color: #ffffcc;
+      background-color: #ecd9c6;
+      border: black dotted; /*Added as visual guide*/
 }
 
 #recipe-links a{
     text-decoration: none;
+    border: #404040;
 }
+
+/*Using this to keep header from overlapping recipes.  NOT WORKING*/
+#dummy{
+    top: 120px;
+    height: 25px;
+    background-color: #ecd9c6;
+    border: green dotted; /*Added as visual guide*/
+}
+
 
 figcaption{
     text-align: center;
@@ -127,7 +105,7 @@ figcaption a{
 }
 
 #home{
-    height: 100vh; /*To make it fit height of screen*/
+    height: 100vh; /*Trying to make it fit height of screen*/
     width: 50vw;
     height: auto;
    /*width: 950px;*/
@@ -150,7 +128,8 @@ figcaption a{
 
 
 #recipe-section{
-    background-color: #ffffcc;
+    top: 120px; /*same height as header*/
+    background-color: #ecd9c6;
     vertical-align: middle;
 }
 
@@ -193,24 +172,30 @@ figcaption a{
     color: #393D40;
 }
 
+/*
+.recipe-layout img{
+   display: block;
+    margin: auto;
+}
+*/
+
+/*
+.recipe-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+*/
+
 .recipe-head {
     text-align: center;
     padding-top: 30px;
 }
 
-/*This should be centered*/
-.link-top {
-    color: #990000;
-    font-size: large;
-    text-decoration: none;
-    background-color: #ffffff;
-    border: black dotted; /*Added as visual guide*/
-}
-
 footer{
     bottom: 0;
     position: fixed; /*Do I NEED TO ADD MORE TO THIS?*/
-    height: 25px;
+    height: 35px;
     width: 950px;
     padding-top: 9px;
     padding-bottom: 5px;
@@ -224,6 +209,21 @@ footer{
 footer a{
     text-decoration: none;
 }
+
+.container a:visited {
+    color: purple;
+} 
+
+.container ul{
+    list-style-type: none; 
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+} 
 
 
 

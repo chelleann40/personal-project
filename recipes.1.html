@@ -18,79 +18,40 @@
 <body>
 	
 	<div id="home">
-		<nav id="main-nav">
+		<nav>
 			<ul>
 				<li><a href="index.html">Home</a><li> 
-				<li><a href="recipes.html">Recipes</a><li> 
+				<li><a href="#recipe-section">Recipes</a><li> 
 			</ul>
 		</nav>
 		
-		<header id="main-head">
+		<header>
 				<h1>Guyanese Kitchen</h1>
 		</header>	
 	
-	
-		<!--Clickable Images (DOES THIS NEED TO BE CONTAINED IN SECTION TAG-->
-		<!--is FIGCAPTION THE BEST WAY TO DO THIS?-->
-		<section id="image-menu">
-			<div class="food-images">
+
+		<section id="recipe-links">
 				<div>
-					<a href="recipes.html#chowmein"> <img src="images/chowmein.jpg" alt="chowmein"></a>
-					<figcaption><a href="recipes.html#chowmein">Chowmein</a><figcaption>
+					<a class="button" href="#chowmein">Chowmein</a>
+					<a class="button" href="#chicken-stew">Chicken Stew</a>
+					<a class="button" href="#curry">Chicken Curry</a>
+					<a class="button" href="#pholourie">Pholourie</a>
+					<a class="button" href="#potato-balls">Potato Balls</a>
+					<a class="button" href="#channa">Channa</a>
+					<a class="button" href="#cheese-rolls">Cheese Rolls</a>
+					<a class="button" href="#patties">Beef Pattties</a>
+					<a class="button" href="#pine-tarts">Pine Tarts</a>
 				</div>
-				
-				<div>
-					<a href="recipes.html#chicken-stew"> <img src="images/stew-chicken.jpg" alt="chicken stew"></a>
-					<figcaption><a href="recipes.html#chicken-stew">Chicken Stew</a><figcaption>
-				</div>
-				
-				<div>
-					<a href="recipes.html#curry"> <img src="images/curry.jpg" alt=chowmein></a>
-					<figcaption><a href="recipes.html#curry">Chicken Curry</a><figcaption>
-				</div>
-			</div>
-			
-			
-			<div class="food-images">
-				<div>
-					<a href="recipes.html#pholourie"> <img src="images/pholourie.JPG" alt="pholourie"></a>
-					<figcaption><a href="recipes.html#pholourie">Pholourie</a><figcaption>
-				</div>
-				
-				<div>
-					<a href="recipes.html#potato-balls"> <img src="images/potato-balls.jpg" alt="potato balls"></a>
-					<figcaption><a href="recipes.html#potato-balls">Potato Balls</a><figcaption>
-				</div>
-				
-				<div>
-					<a href="recipes.html#channa"> <img src="images/channa.jpg" alt=chowmein></a>
-					<figcaption><a href="recipes.html#channa">Channa</a><figcaption>
-				</div>
-				
-			</div>
-			
-			<div class="food-images">
-				<div>
-					<a href="recipes.html#cheese-rolls"> <img src="images/cheese-rolls.jpg" alt="Cheese rolls"></a>
-					<figcaption><a href="recipes.html#cheese-rolls">Cheese Rolls</a><figcaption>
-				</div>
-				
-				<div>
-					<a href="recipes.html#patties"> <img src="images/patties.jpg" alt=patties></a>
-					<figcaption><a href="recipes.html#patties">Beef Pattties</a><figcaption>
-				
-				</div>
-				
-				<div>
-					<a href="recipes.html#pine-tarts"> <img src="images/pine-tarts.jpg" alt="Pine Tarts"></a>
-					<figcaption><a href="recipes.html#pine-tarts">Pine Tarts</a><figcaption>
-				</div>
-			</div>
+		</section>
+
+		<!--Adding this dummy div to prevent header overlapping when returning to top of page-->
+		<div id="dummy">
+			<p></p>
+		</div>	
 
 	</div>
-	
 
-<!--	
+
 <section id="recipe-section">
 	<div id="chowmein" class="recipe-layout">
 		
@@ -123,10 +84,9 @@
 				<p>Add molasses to mixture and mix thoroughly</p>
 				<p>Add noodles to pot and mix using a long fork.</p>
 				<p>Add chopped scallions and mix.</p>
-		</div>
 	</div>
-	
-	
+
+	<a id="top" href="#dummy">Top</a>
 
 	<div id="chicken-stew" class="recipe-layout">
 		<div class="recipe-top">
@@ -174,10 +134,9 @@
 				<p>Add molasses to mixture and mix thoroughly</p>
 				<p>Add noodles to pot and mix using a long fork.</p>
 				<p>Add chopped scallions and mix.</p>
-		</div>
 	</div>
-	
 
+	<a id="top" href="#dummy">Top</a>
 
 	<div id="channa" class="recipe-layout">
 		<div class="recipe-top">
@@ -198,10 +157,9 @@
 					<p>Remove from liquid.</p>
 					<p>Heat oil. Add chopped onion, pepper, beans, and some black pepper and fry for 2-3 minutes.</p>
 					<p>Serve hot.</p>
-		</div>	
 	</div>
 	
-
+	<a id="top" href="#dummy">Top</a>
 			
 	
 	<div id="curry" class="recipe-layout">
@@ -228,10 +186,9 @@
 				<p>Add to pot, curry powder and garam massala; fry this mixture with the onions and garlic for about 5-8 minutes on medium heat.</p> 
 				<p>Add chicken and salt to taste and cook for about 15 to 20 minutes.</p> 
 				<p>Add potatoes and 1 1/2 C. water; cook additional 20 minutes or until chicken and potatoes are fully cooked.</p>
-		</div>
 	</div>
 	
-
+	<a id="top" href="#dummy">Top</a>
 
 	<div id="pholourie" class="recipe-layout">
 		<div class="recipe-top">
@@ -264,10 +221,9 @@
 				<p>Fry for about 5-7 minutes until a crispy golden brown.  Less if you don't want crispy pholourie</p>
 				<p>Use a slotted spoon to ocassionally stir the pholourie in the wok</p>
 				<p>Place on paper towels to drain excess oil and then transfer to clean pan</p>
-		</div>
 	</div>
 	
-
+	<a id="top" href="#dummy">Top</a>
 	
 	<div id="patties" class="recipe-layout">
 		<div class="recipe-top">  
@@ -325,10 +281,9 @@
 				<p>Finally, prick the top with a fork, and baste with egg wash</p>
 				<p>Place on a greased flat sheet pan, and bake at 375 degrees for 25 minutes</p>
 				<p>Cool on a rack, but serve warm</p>
-		</div>
 	</div>
 	
-
+	<a id="top" href="#dummy">Top</a>
 	
 	<div id="pine-tarts" class="recipe-layout">
 		<div class="recipe-top">
@@ -356,11 +311,9 @@
 				<p>Blend Pineapple chunks in blender with 1/2 of juice from can. If you're using crushed pineapple then there's no need to blend it.  Mix blended pineapple, sugar, lemon juice and salt. On a medium fire, cook pineapple for 25 minutes until it has thickened.  Do not overcook!!  Remove from heat and cool completely before using.</p>
 				<p>Beat one egg yolk with 1 tbsp of water and set aside.  Preheat oven to 375 degrees.</p>
 				<p>Roll pastry to about 1/8 of an inch thick and cut into 6 inch circles( I used a bowl). a11 Place a 1 1/2 tbsp of pineapple filling in the center of the pastry and spread, leaving 1/2 inch border.  Brush the border with the egg wash.  a2Fold one corner of the pastry over the filling like an envelope. a3 Fold other corner, slightly overlapping.  a4Now fold the last corner of the pastry, this should enclose the filling and form a triangle.  Pinch the edges close. Brush Pastry with egg wash.  pinetart21Bake in a oven preheated to 375 degrees for 15-20 minutes or until golden brown.  Place on a cooling rack and allow it to cool completely before serving. Enjoy!</p>
-		</div>
-			<p></p>
 	</div>
 	
-
+	<a id="top" href="#dummy">Top</a>
 	
 	<div id="cheese-rolls" class="recipe-layout">
 		<div class="recipe-top">
@@ -394,11 +347,9 @@
 				<p>Using a fork press both ends to seal.</p>
 				<p>Place on an ungreased cookie sheet seam side down and brush with egg wash.</p>
 				<p>Bake at 375 degrees for 20 mins until golden brown.  Enjoy!!</p>
-		</div>
-			 <p></p>
 	</div>
 	
-
+	<a id="top" href="#dummy">Top</a>
 	
 	<div id="potato-balls" class="recipe-layout">
 		<div class="recipe-top">
@@ -430,19 +381,19 @@
 				<p>Roll each ball in dry flour,then dip into the prepared batter.</p>
 				<p>Heat the oil to 365/F (185/C). Deep fry the balls in the hot oil until golden brown.</p>
 				<p>Serve hot, as an appetizer or a snack. Makes 16-18 balls.</p>
-		</div>
 	</div>	
 	
--->
+	<a id="top" href="#dummy">Top</a>
 
 </section>
 
 
-	 
-	<footer>
-			
-			<p>Project Code Personal Project - November 2017</p>
-	</footer>
+
+<footer>
+	<p>Project Code Personal Project - November 2017</p>
+</footer>
+
 
 </body>
+
 </html>
