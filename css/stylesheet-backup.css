@@ -7,10 +7,9 @@ body{
     /*width: 70vw;*/
     width: 950px;
     margin: 5px auto 40px auto;
-    margin-top: 20px;
+    margin-top: 110px;
     background-image: url(../images/background-image-2.jpeg);
 }
-
 
 bg{
     /*width: 70vw;*/
@@ -20,26 +19,16 @@ bg{
     background-size: 70vw;
 }
 
-#main-nav { 
-    /*position: fixed;*/
-    /*top: 0; Positions this at top of page*/
+nav { 
+    position: fixed;
+    top: 0; /*Positions this at top of page*/
     width: 950px;
-    height: 50px;
+    height: 45px;
     display:flex;
     text-align: center;
+   /* vertical-align: center;*/
     justify-content: flex-end;
-    font-size: 25px;
-    background-color: #404040;
-} 
-
-#recipe-nav { 
-    /*position: fixed;*/
-    /*top: 0; Positions this at top of page*/
-    width: 950px;
-    height: 50px;
-    display:flex;
-    text-align: center;
-    justify-content: flex-end;
+    margin: 2px 0 0; /*REVIEW THIS*/
     font-size: 25px;
     background-color: #404040;
 } 
@@ -58,10 +47,11 @@ nav a {
 }
 
 
-#main-head{
-    /*position: fixed;*/
-    top: 20px;
-    height: 70px;
+header{
+    position: fixed;
+    top: 40px;
+    height: 70px; 
+    /*width: 70vw;*/
     width: 950px;
     flex-direction: row;
     text-align: center;
@@ -71,76 +61,13 @@ nav a {
     font-family: Arvo;
     letter-spacing: 8px;
 }
-
-#recipe-header{
-    /*position: fixed;*/
-    top: 20px;
-    height: 70px;
-    width: 950px;
-    flex-direction: row;
-    text-align: center;
-    background-color: #404040; 
-    font-size: 150%;
-    color: #ffffff;
-    font-family: Arvo;
-    letter-spacing: 8px;
-}
-
-#recipe-header{
-    /*position: fixed;*/
-    top: 20px;
-    height: 70px;
-    width: 950px;
-    flex-direction: row;
-    text-align: center;
-    background-color: #404040; 
-    font-size: 150%;
-    color: #ffffff;
-    font-family: Arvo;
-    letter-spacing: 8px;
-}
-
-h1 {
-    text-align: center;
-} 
-
 
 #image-menu{
-    /*height: 850px;*/
-    height: 100vh;
-    width: 950px;
+   /* top: 100px;*/
+    height: 850px;
     vertical-align: middle;
     background-color: #f5f5f0;
 }
-
-#recipe-links{
-     display: block;
-     height: 100px;
-     width: 950px;
-     top: 150px;
-     background-color: #f5f5f0;
-     text-align: center;
-     justify-content: space-evenly;
-     padding-top: 20px; /*Added to provide space between links and header*/
-}
-
-#recipe-links a{
-    text-decoration: none;
-    color: #ffffff;
-    /*background-color: #39ac39;*/
-    
-}
-
-.button{
-    /*display: inline-block;*/
-    height: 100px;
-    width: 150px;
-    background-color: #404040;
-    padding: 5px;
-    margin-top: 10px;
-}
-
-
 
 figcaption{
     text-align: center;
@@ -156,10 +83,10 @@ figcaption a{
 }
 
 #home{
-    height: 100vh; /*To make it fit height of screen*/
-    width: 50vw;
+    height: 100vh; /*Trying to make it fit height of screen*/
+    /*width: 70vw;*/
     height: auto;
-   /*width: 950px;*/
+    width: 950px;
     align-items: center;
 }
 
@@ -180,7 +107,6 @@ figcaption a{
 
 #recipe-section{
     background-color: #f5f5f0;
-    vertical-align: middle;
 }
 
 
@@ -196,10 +122,9 @@ figcaption a{
 }
 
 .recipe-layout{
-    display: block;
+    /*padding-bottom: 50px;*/
     width: 950px;
     text-align: center;
-    padding-bottom: 50px;
 }
 
 .recipe-layout h3{
@@ -222,33 +147,24 @@ figcaption a{
     color: #393D40;
 }
 
+/*
+.recipe-layout img{
+   display: block;
+    margin: auto;
+}
+*/
+
+/*
+.recipe-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+*/
+
 .recipe-head {
     text-align: center;
     padding-top: 30px;
-}
-
-/*This should be centered*/
-.link-top {
-    font-size: large;
-    text-decoration: none;
-    background-color: #ffffff;
-    text-align: center;
-    /*background-color: #404040; */
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.link-top a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/*This should be centered*/
-.link-top {
-    color: #990000;
-    font-size: large;
-    text-decoration: none;
-    background-color: #ffffff;
 }
 
 footer{
@@ -264,11 +180,30 @@ footer{
     font-size: large;
 }
 
-
-
+/*
+footer p{
+    color: #000000;
+    font-size: large;
+}
+*/
 footer a{
     text-decoration: none;
 }
+
+.container a:visited {
+    color: purple;
+} 
+
+.container ul{
+    list-style-type: none; 
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+} 
 
 
 
